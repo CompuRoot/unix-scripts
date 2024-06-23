@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# hr - line HTML tag <hr> but for terminal.
+#
+# Draw line made of single or multiple characters to split termial
+# screen horisontaly, selfadjustable to terminal width
+#
+# useful pattern as first script parameter:
+# - ....:..../
+# - -=
+# - *-
+
+str=${1:-#};          # can accepts multiple characters, '#' is default
+columns=$(tput cols); # get width of terminal
+hr=$(
+  printf '%*s' "$((columns/${#str}))"
+);
+hr=${hr// /$str}$str;
+printf '%s\n' "${hr:0:columns}"
+
+exit
+
+
+## my new
+printf "%$(tput cols)s" | tr " " ${1:-#}
+exit
+
+# my
+printf "%$(tput cols)s" | tr " " ${1:-#}
+
+#c=${1:-#};w=$(tput cols);r=${#c};printf %$((w/r))s|sed -r "s/\s/${c}/g";printf '%s\n' "${c:0:$((w%r))}"
+
+
