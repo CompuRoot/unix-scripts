@@ -1,2 +1,2 @@
 # unix-scripts
-Unix scripts
+Various Unix scripts for administrative tasks
