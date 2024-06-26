@@ -2,10 +2,11 @@
 
 # hr - like HTML tag <hr> but for terminal, draw line full width
 #
-# Draw line made of single or multiple characters to split termial
-# screen horisontaly, self adjustable to terminal width
+# Draw a line made of single or multiple characters to split termial
+# screen horisontaly, line is self adjustable to terminal width.
+# Default line's character is `#' - hash sign
 #
-# useful pattern as first script parameter:
+# Useful patterns that can be used as a first script's parameter:
 # - ....:..../
 # - -=
 # - *-

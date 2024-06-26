@@ -15,7 +15,7 @@ bigfont=${2:-0}  # 1 for Yes 0 - for No (default)
 is_figlet=$(command -v figlet)
 if [ -z "${is_figlet}" ] && [ ${bigfont} -ne 0 ]; then
   echo "To use big fonts, install 'figlet' first."
-  echo "or use ${0} without second parameter."
+  echo "Use ${0} with second parameter set to 1."
   echo "exiting..."
   exit 1
 fi
