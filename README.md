@@ -3,6 +3,7 @@ Various Unix scripts for administrative tasks
 
 ## bin
 - `ascii` - print **ASCII** character set encoded in octal, decimal, and hexadecimal
+- `calculator.awk.sh` - AWK based terminal calculator that supports floating point operations as well other math functions.
 - `hr` - like HTML tag `<hr>` but for terminal, draw line to full width of terminal.
 - `timer_dd-hh-mm-ss.sh` - countdown timer. Accepts timer data as `dd`-for days, `hh`-for hours, `mm`-for minutes, `ss`-for seconds.<br>
   `hh`, `mm`, `ss` are optional, timer can be specified as        
